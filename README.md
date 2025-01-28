@@ -1,1 +1,0 @@
-# Griya-Technology
