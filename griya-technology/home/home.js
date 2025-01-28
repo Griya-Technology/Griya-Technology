@@ -70,7 +70,7 @@ animateValue("awardsacv", 1, 10, 3000);
 
 
 
-// Typewriter effect with multiple texts
+// typewriter
 class TypeWriter {
     constructor(element, texts, wait = 3000) {
         this.element = element;
@@ -113,7 +113,7 @@ class TypeWriter {
     }
 }
 
-// Initialize Typewriter
+// inisialisasi
 document.addEventListener('DOMContentLoaded', () => {
     const typewriter = new TypeWriter(document.querySelector('#typewriter'), [
         'Welcome to \n Griya Technology',
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ], 3000);
 });
 
-// Particles.js Configuration
+// efek partikel
 particlesJS('particles-js', {
     particles: {
         number: {
@@ -208,12 +208,12 @@ particlesJS('particles-js', {
     retina_detect: true
 });
 
-// Mouse Trail Effect
+// efek mouse
 const canvas = document.getElementById('mouse-trail');
 const ctx = canvas.getContext('2d');
 let particles = [];
 
-// Resize canvas
+// resize
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -222,7 +222,7 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
-// Particle class for mouse trail
+// partikel untuk mouse saat gerak
 class Particle {
     constructor(x, y) {
         this.x = x;
@@ -249,14 +249,14 @@ class Particle {
     }
 }
 
-// Mouse movement handler
+// gerakan mouse
 window.addEventListener('mousemove', (e) => {
     for (let i = 0; i < 3; i++) {
         particles.push(new Particle(e.x, e.y));
     }
 });
 
-// Animation loop for mouse trail
+// animasi
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
@@ -274,7 +274,7 @@ function animate() {
 
 animate();
 
-// Counter Animation
+// animasi counter
 const counters = document.querySelectorAll('.stat-number');
 
 counters.forEach(counter => {
@@ -293,7 +293,7 @@ counters.forEach(counter => {
         }
     };
 
-    // Start counter animation when element is in view
+    // counter aktif saat dibuka
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
