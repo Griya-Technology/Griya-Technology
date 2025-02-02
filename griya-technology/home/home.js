@@ -70,7 +70,7 @@ animateValue("awardsacv", 1, 10, 3000);
 
 
 
-// typewriter
+// Typewriter effect with multiple texts
 class TypeWriter {
     constructor(element, texts, wait = 3000) {
         this.element = element;
@@ -113,7 +113,7 @@ class TypeWriter {
     }
 }
 
-// inisialisasi
+// Initialize Typewriter
 document.addEventListener('DOMContentLoaded', () => {
     const typewriter = new TypeWriter(document.querySelector('#typewriter'), [
         'Welcome to \n Griya Technology',
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ], 3000);
 });
 
-// efek partikel
+// Particles.js Configuration
 particlesJS('particles-js', {
     particles: {
         number: {
@@ -208,12 +208,12 @@ particlesJS('particles-js', {
     retina_detect: true
 });
 
-// efek mouse
+// Mouse Trail Effect
 const canvas = document.getElementById('mouse-trail');
 const ctx = canvas.getContext('2d');
 let particles = [];
 
-// resize
+// Resize canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -222,7 +222,7 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
-// partikel untuk mouse saat gerak
+// Particle class for mouse trail
 class Particle {
     constructor(x, y) {
         this.x = x;
@@ -249,14 +249,14 @@ class Particle {
     }
 }
 
-// gerakan mouse
+// Mouse movement handler
 window.addEventListener('mousemove', (e) => {
     for (let i = 0; i < 3; i++) {
         particles.push(new Particle(e.x, e.y));
     }
 });
 
-// animasi
+// Animation loop for mouse trail
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
@@ -274,7 +274,7 @@ function animate() {
 
 animate();
 
-// animasi counter
+// Counter Animation
 const counters = document.querySelectorAll('.stat-number');
 
 counters.forEach(counter => {
@@ -293,7 +293,7 @@ counters.forEach(counter => {
         }
     };
 
-    // counter aktif saat dibuka
+    // Start counter animation when element is in view
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
