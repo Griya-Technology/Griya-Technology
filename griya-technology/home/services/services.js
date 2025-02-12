@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Initialize AOS with custom settings
 AOS.init({
     duration: 1000,
     easing: 'ease-out-cubic',
@@ -119,7 +118,7 @@ AOS.init({
     delay: 50
 });
 
-// Smooth Scroll Implementation
+// smoooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -133,7 +132,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for scroll animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -150,12 +148,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements
+// observe element
 document.querySelectorAll('.service-card, .cta-section').forEach(el => {
     observer.observe(el);
 });
 
-// Dynamic hover effects for service cards
+// hover effect
 document.querySelectorAll('.service-card').forEach(card => {
     card.addEventListener('mousemove', function(e) {
         const rect = this.getBoundingClientRect();
@@ -167,7 +165,7 @@ document.querySelectorAll('.service-card').forEach(card => {
     });
 });
 
-// Counter animation for numbers
+// counter animation
 function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -181,12 +179,12 @@ function animateValue(obj, start, end, duration) {
     window.requestAnimationFrame(step);
 }
 
-// Add loading animation
+// loading animation
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-// Mobile menu toggle
+// mobile menu togle
 const handleResize = () => {
     if (window.innerWidth <= 768) {
         document.querySelectorAll('.service-card.featured').forEach(card => {
@@ -198,7 +196,6 @@ const handleResize = () => {
 window.addEventListener('resize', handleResize);
 handleResize();
 
-// Performance optimization
 const debouncedScroll = debounce(() => {
     const scrolled = window.scrollY;
     document.documentElement.style.setProperty('--scroll', scrolled);
