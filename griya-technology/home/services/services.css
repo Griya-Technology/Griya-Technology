@@ -314,19 +314,19 @@ backdrop-filter: blur(2px);
 
 @keyframes bluePurpleGradientChange {
   0% {
-      color: #1e3a8a; /* Biru Tua */
+      color: #1e3a8a; 
   }
   25% {
-      color: #2563eb; /* Biru Sedang */
+      color: #2563eb; 
   }
   50% {
-      color: #7c3aed; /* Ungu Tua */
+      color: #7c3aed; 
   }
   75% {
-      color: #a78bfa; /* Ungu Muda */
+      color: #a78bfa; 
   }
   100% {
-      color: #1e3a8a; /* Kembali ke Biru Tua */
+      color: #1e3a8a; 
   }
 }
 
@@ -338,7 +338,7 @@ backdrop-filter: blur(2px);
 
 
 
-/* Particles Background */
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -346,7 +346,6 @@ backdrop-filter: blur(2px);
     z-index: 1;
 }
 
-/* Services Section */
 .services-section {
     position: relative;
     padding: 6rem 2rem;
@@ -354,7 +353,6 @@ backdrop-filter: blur(2px);
     z-index: 2;
 }
 
-/* Floating Elements */
 .floating-element {
     position: absolute;
     border-radius: 50%;
@@ -408,7 +406,6 @@ backdrop-filter: blur(2px);
     position: relative;
 }
 
-/* Section Header */
 .section-header {
     text-align: center;
     margin-bottom: 5rem;
