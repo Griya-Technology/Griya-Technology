@@ -70,7 +70,7 @@ animateValue("awardsacv", 1, 10, 3000);
 
 
 
-// Typewriter effect with multiple texts
+// typewriter effect
 class TypeWriter {
     constructor(element, texts, wait = 3000) {
         this.element = element;
@@ -113,16 +113,16 @@ class TypeWriter {
     }
 }
 
-// Initialize Typewriter
+// typewriter
 document.addEventListener('DOMContentLoaded', () => {
     const typewriter = new TypeWriter(document.querySelector('#typewriter'), [
-        'Welcome to \n Griya Technology',
-        'various digital \n solutions for you',
-        'quality and \n professional service'
+        'GRIYA TECHNOLOGY',
+        'DIGITAL SOLUTIONS FOR YOU',
+        'QUALITY & PROFESSIONAL SERVICE'
     ], 3000);
 });
 
-// Particles.js Configuration
+// particles
 particlesJS('particles-js', {
     particles: {
         number: {
@@ -208,12 +208,12 @@ particlesJS('particles-js', {
     retina_detect: true
 });
 
-// Mouse Trail Effect
+// mouse traill
 const canvas = document.getElementById('mouse-trail');
 const ctx = canvas.getContext('2d');
 let particles = [];
 
-// Resize canvas
+// resize
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -222,7 +222,7 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
-// Particle class for mouse trail
+// particle class mouse trail
 class Particle {
     constructor(x, y) {
         this.x = x;
@@ -249,14 +249,14 @@ class Particle {
     }
 }
 
-// Mouse movement handler
+// mouse movement
 window.addEventListener('mousemove', (e) => {
     for (let i = 0; i < 3; i++) {
         particles.push(new Particle(e.x, e.y));
     }
 });
 
-// Animation loop for mouse trail
+// animation loop 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
@@ -274,13 +274,13 @@ function animate() {
 
 animate();
 
-// Counter Animation
+// counter
 const counters = document.querySelectorAll('.stat-number');
 
 counters.forEach(counter => {
     const target = parseInt(counter.getAttribute('data-target'));
     const duration = 2000; // 2 seconds
-    const step = target / (duration / 16); // 60 FPS
+    const step = target / (duration / 16); // 60 fps
     let current = 0;
 
     const updateCounter = () => {
@@ -293,7 +293,7 @@ counters.forEach(counter => {
         }
     };
 
-    // Start counter animation when element is in view
+    // start counter 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -306,7 +306,7 @@ counters.forEach(counter => {
     observer.observe(counter);
 });
 
-// Smooth scroll for navigation
+// smooth croll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
