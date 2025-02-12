@@ -7,7 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Global Background Styling */
 body, html {
   background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
   background-attachment: fixed;
@@ -347,13 +346,11 @@ backdrop-filter: blur(2px);
     mix-blend-mode: screen;
   }
   
-  /* Enhanced Home Section */
   .home-section {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    /* Reduced padding for better spacing */
     padding: 80px 0;
     z-index: 2;
     overflow: hidden;
@@ -374,9 +371,7 @@ backdrop-filter: blur(2px);
   }
   
   .text-animation-container {
-    /* Reduced height for better spacing */
     height: 120px;
-    /* Reduced margin */
     margin-bottom: 1px;
     position: relative;
   }
@@ -389,15 +384,12 @@ backdrop-filter: blur(2px);
     line-height: 1.1;
     letter-spacing: -0.02em;
     text-shadow: 0 2px 10px rgba(100, 255, 218, 0.2);
-    /* Added margin-bottom for better spacing with next element */
     margin-bottom: 16px;
   }
-  
-  /* Enhanced Statistics */
+
   .counter-stats {
     display: flex;
     gap: 60px;
-    /* Adjusted margins for better flow */
     margin: 20px 0;
     flex-wrap: wrap;
   }
@@ -441,8 +433,7 @@ backdrop-filter: blur(2px);
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  
-  /* Enhanced Description */
+
   .description {
     font-family: 'Inter', sans-serif;
     font-size: clamp(16px, 2vw, 20px);
@@ -451,8 +442,7 @@ backdrop-filter: blur(2px);
     margin-bottom: 48px;
     max-width: 600px;
   }
-  
-  /* Enhanced Features */
+
   .features {
     display: flex;
     gap: 32px;
@@ -490,7 +480,6 @@ backdrop-filter: blur(2px);
     transform: scale(1.2);
   }
   
-  /* Enhanced Buttons */
   .cta-group {
     display: flex;
     gap: 24px;
@@ -532,7 +521,6 @@ backdrop-filter: blur(2px);
     transform: translateY(-2px);
   }
   
-  /* Enhanced Media Content */
   .media-content {
     flex: 1;
     position: relative;
@@ -573,7 +561,6 @@ backdrop-filter: blur(2px);
     transform: scale(1.08);
   }
   
-  /* Enhanced Floating Cards */
   .floating-card {
     position: absolute;
     background: rgba(255, 255, 255, 0.08);
@@ -643,7 +630,6 @@ backdrop-filter: blur(2px);
     letter-spacing: -0.02em;
   }
   
-  /* Enhanced Scroll Indicator */
   .scroll-indicator {
     position: absolute;
     bottom: 48px;
@@ -717,7 +703,6 @@ backdrop-filter: blur(2px);
 
 
   
-  /* Responsive */
 :root {
   --primary-color: #64ffda;
   --dark-background: #0a192f;
