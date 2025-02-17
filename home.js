@@ -116,7 +116,7 @@ class TypeWriter {
 // typewriter
 document.addEventListener('DOMContentLoaded', () => {
     const typewriter = new TypeWriter(document.querySelector('#typewriter'), [
-        'GRIYA TECHNOLOGY',
+        'PROVIDE COMPUTER COMPONENTS',
         'DIGITAL SOLUTIONS FOR YOU',
         'QUALITY & PROFESSIONAL SERVICE'
     ], 3000);
